@@ -21,5 +21,14 @@ namespace WuerfelspielTests
             Wuerfel w2 = new Wuerfel(anzahlSeiten);
             Assert.AreEqual(w2.AnzahlSeiten, anzahlSeiten);
         }
+
+        [TestMethod]
+        public void WuerfelWuerfeln()
+        {
+            Wuerfel w3 = new Wuerfel();
+            int result = w3.Wuerfeln();
+
+            Assert.IsNotNull(result);
+        }
     }
 }

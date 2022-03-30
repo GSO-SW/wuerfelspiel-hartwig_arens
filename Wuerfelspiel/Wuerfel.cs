@@ -23,5 +23,11 @@ namespace Wuerfelspiel
                 return anzahlSeiten;
             }
         }
+
+        public int Wuerfeln()
+        {
+            Random result = new Random();
+            return result.Next(1, anzahlSeiten);
+        }
     }
 }
