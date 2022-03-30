@@ -13,5 +13,13 @@ namespace WuerfelspielTests
             Wuerfel w1 = new Wuerfel();
             Assert.IsNotNull(w1);
         }
+
+        [TestMethod]
+        public void D6Erstellen()
+        {
+            int anzahlSeiten = 6;
+            Wuerfel w2 = new Wuerfel(anzahlSeiten);
+            Assert.AreEqual(w2.AnzahlSeiten, anzahlSeiten);
+        }
     }
 }
