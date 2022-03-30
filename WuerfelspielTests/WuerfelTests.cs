@@ -30,5 +30,15 @@ namespace WuerfelspielTests
 
             Assert.IsNotNull(result);
         }
+
+        [TestMethod]
+        public void WuerfelLetztesErgebnisAbrufen()
+        {
+            Wuerfel w4 = new Wuerfel();
+            int result = w4.Wuerfeln();
+            int result_save = w4.LetztesErgebnis;
+
+            Assert.AreEqual(result, result_save);
+        }
     }
 }

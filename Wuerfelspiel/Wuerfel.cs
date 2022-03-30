@@ -5,6 +5,7 @@ namespace Wuerfelspiel
     public class Wuerfel
     {
         int anzahlSeiten;
+        int letztesErgebnis;
 
         public Wuerfel()
         {
@@ -21,6 +22,14 @@ namespace Wuerfelspiel
             get
             {
                 return anzahlSeiten;
+            }
+        }
+
+        public int LetztesErgebnis
+        {
+            get
+            {
+                return letztesErgebnis;
             }
         }
 
